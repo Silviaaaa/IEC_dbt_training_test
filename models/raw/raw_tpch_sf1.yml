@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: raw_customer
+    columns:
+      - name: C_CUSTKEY
+        tests:
+          - unique
+          - not_null
+      - name: C_MKTSEGMENT
+        tests:
+          - not_null
+
+  - name: raw_lineitem
+    columns:
+      - name: L_ORDERKEY
+        tests:
+          - not_null
+      - name: L_PARTKEY
+        tests:
+          - not_null
+      - name: L_RETURNFLAG
+        tests:
+          - accepted_values:
+              values: ['R', 'N', 'A']
+
+  - name: raw_orders
+    columns:
+      - name: O_ORDERKEY
+        tests:
+          - unique
+          - not_null
+      - name: O_CUSTKEY
+        tests:
+          - not_null
+
