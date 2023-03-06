@@ -38,4 +38,8 @@ models:
       +materialized: view
     raw:
       +materialized: table
+    intermediate:
+      +materialized: table
+    reporting:
+      +materialized: table
       
