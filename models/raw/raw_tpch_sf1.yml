@@ -2,35 +2,45 @@ version: 2
 
 models:
   - name: raw_customer
+    description: Staged customer data from snowflake sample data.
     columns:
       - name: C_CUSTKEY
+        description: The primary key for customers.
         tests:
           - unique
           - not_null
       - name: C_MKTSEGMENT
+        description: The reporting dimension for customers.
         tests:
           - not_null
 
   - name: raw_lineitem
+    description: Staged lineitem data from snowflake sample data.
     columns:
       - name: L_ORDERKEY
+        description: The foreign key for lineitem and orders.
         tests:
           - not_null
       - name: L_PARTKEY
+        description: The foreign key for lineitem and parts.
         tests:
           - not_null
       - name: L_RETURNFLAG
+        description: "{{ doc('returnflag') }}"
         tests:
           - accepted_values:
               values: ['R', 'N', 'A']
 
   - name: raw_orders
+    description: Staged orders data from snowflake sample data.
     columns:
       - name: O_ORDERKEY
+        description: The primary key for orders.
         tests:
           - unique
           - not_null
       - name: O_CUSTKEY
+        description: The foreign key for orders and customers.
         tests:
           - not_null
 
