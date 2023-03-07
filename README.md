@@ -1,16 +1,11 @@
 # IEC_dbt_training_test
 
-------------------------------------------
-----    PSG-DG-Q1_Sharing_DBT_v1.0    ----
-----      DBT Exercise Demo Code      ----
-----  Created Date: 2023/03/08        ----
-----  Author: Silvia Yang, Jesse Wei  ----
-------------------------------------------
-
 > PSG-DG-Q1_Sharing_DBT_v1.0
+> 
 > DBT Exercise Demo Code
 > 
 > Created Date: 2023/03/08
+> 
 > Author: Silvia Yang, Jesse Wei
 
 
