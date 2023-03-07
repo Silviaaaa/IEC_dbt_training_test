@@ -11,6 +11,20 @@
 
 [TOC]
 
+<!-- 
+Table of Content
+1. Setup
+2. Prepare Dataset
+3. Start Project
+4. Exercise
+    4.1 Integrate raw data to dbt
+    4.2 Create intermediate data model
+    4.3 Create reporting/analytics data model
+    4.4 Configuration and test
+    4.5 Documentation
+-->
+
+
 # 1. Setup
 
 1. [Snowflake Signup](https://signup.snowflake.com/)
