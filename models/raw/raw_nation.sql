@@ -1,0 +1,1 @@
+select * from RAW_TRAIN.TPCH_SF1.NATION

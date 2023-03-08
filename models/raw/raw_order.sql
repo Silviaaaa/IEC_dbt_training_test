@@ -1,2 +1,2 @@
 select * 
-from snowflake_sample_data.tpch_sf1.order
+from RAW_TRAIN.tpch_sf1.orders
